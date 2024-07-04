@@ -25,7 +25,7 @@ Before running the setup script, ensure you have the following installed on your
    
    sudo chmod +x install_tools.sh
    
-   sudo ./install_tools.sh
+   ./install_tools.sh
 
 The script will install:
 

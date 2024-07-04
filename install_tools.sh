@@ -1,15 +1,10 @@
 #!/usr/bin/env bash
 
-# Check if the script is run with superuser privileges
-if [[ "${UID}" -ne 0 ]]
-then
-  echo "Please run with sudo or as root." >&2
-  exit 1
-fi
+
 
 # Update and install prerequisites
-apt-get update
-apt-get install -y \
+sudo apt-get update
+sudo apt-get install -y \
     python3-pmw python3-tk python3-pandas python3-matplotlib python3-numpy python3-openbabel \
     git make csh flex gfortran g++ xorg-dev zlib1g-dev libbz2-dev patch wget
 
@@ -29,10 +24,15 @@ install_ambertools() {
     conda install -c conda-forge ambertools
 }
 
-# Function to install ACPYPE
+# # Function to install ACPYPE
+# install_acpype() {
+#     git clone https://github.com/alanwilter/acpype.git "${HOME}/acpype"
+#     ln -s "${HOME}/acpype/acpype.py" /usr/local/bin/acpype
+# }
+
+# Function to install ACPYPE using conda
 install_acpype() {
-    git clone https://github.com/alanwilter/acpype.git "${HOME}/acpype"
-    ln -s "${HOME}/acpype/acpype.py" /usr/local/bin/acpype
+    conda install -c conda-forge acpype
 }
 
 # Function to install GROMACS

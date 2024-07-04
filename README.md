@@ -21,11 +21,11 @@ Before running the setup script, ensure you have the following installed on your
 
    Open your terminal and navigate to the directory where you saved the script. Run the following command to make the script executable:
    
-   cd ligtopgen
-   
-   sudo chmod +x install_tools.sh
-   
-   ./install_tools.sh
+      cd ligtopgen
+      
+      sudo chmod +x install_tools.sh
+      
+      ./install_tools.sh
 
 The script will install:
 

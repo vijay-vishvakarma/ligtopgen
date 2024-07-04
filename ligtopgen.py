@@ -28,7 +28,10 @@ def generate_topology():
     try:
         # Path to the AmberTools activation script miniconda3/envs/AmberTools23
         home_dir = os.path.expanduser("~")
-        ambertools_activation = os.path.join(home_dir, "miniconda3/envs/AmberTools23", "amber.sh")
+        ambertools_activation = os.path.join(home_dir, "miniconda3", "amber.sh")
+
+        # Prepare command to execute acpype
+        acpype_executable = "/usr/local/bin/acpype"
 
         # Prepare command to activate AmberTools and execute acpype
         command = f"source {ambertools_activation} && acpype -i {ligand} -o all"

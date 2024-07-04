@@ -25,7 +25,7 @@ install_ambertools() {
 # Function to install ACPYPE
 install_acpype() {
     git clone https://github.com/alanwilter/acpype.git "${HOME}/acpype"
-    ln -s "${HOME}/acpype/acpype.py" /usr/local/bin/acpype
+    sudo ln -s "${HOME}/acpype/run_acpype.py" /usr/local/bin/acpype
 }
 
 # Function to install GROMACS

@@ -44,7 +44,8 @@ bash
 
     pyinstaller topology_generator.spec
 
-    This will create a standalone executable named ligtopgen in the dist directory.
+    
+This will create a standalone executable named ligtopgen in the dist directory.
 
 Usage
 

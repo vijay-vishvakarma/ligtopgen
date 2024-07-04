@@ -47,14 +47,15 @@ bash
     
 This will create a standalone executable named ligtopgen in the dist directory.
 
+    mv ./dist/ligtopgen /usr/local/bin/ligtopgen
+    chmod +x /usr/local/bin/ligtopgen
+    
 Usage
 
-    Launch the Ligand Topology Generator
-
-    Navigate to the directory containing the ligtopgen executable and run it:
-
-   ./dist/ligtopgen
-
+    Launch the Ligand Topology Generator, just type on terminal
+    
+    ligtopgen
+    
 You can also add an alias to your .bashrc file for easier access:
 
 bash

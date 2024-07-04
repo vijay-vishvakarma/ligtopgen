@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-
-
 # Update and install prerequisites
 sudo apt-get update
 sudo apt-get install -y \
@@ -24,15 +22,10 @@ install_ambertools() {
     conda install -c conda-forge ambertools
 }
 
-# # Function to install ACPYPE
-# install_acpype() {
-#     git clone https://github.com/alanwilter/acpype.git "${HOME}/acpype"
-#     ln -s "${HOME}/acpype/acpype.py" /usr/local/bin/acpype
-# }
-
-# Function to install ACPYPE using conda
+# Function to install ACPYPE
 install_acpype() {
-    conda install -c conda-forge acpype
+    git clone https://github.com/alanwilter/acpype.git "${HOME}/acpype"
+    ln -s "${HOME}/acpype/acpype.py" /usr/local/bin/acpype
 }
 
 # Function to install GROMACS

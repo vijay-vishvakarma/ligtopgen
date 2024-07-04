@@ -30,7 +30,7 @@ install_acpype() {
 
 # Function to install GROMACS
 install_gromacs() {
-    apt-get install -y gromacs
+    sudo apt-get install -y gromacs
 }
 
 

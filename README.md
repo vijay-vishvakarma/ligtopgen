@@ -20,13 +20,14 @@ Before running the setup script, ensure you have the following installed on your
 2. **Run the Script Executable**
 
    Open your terminal and navigate to the directory where you saved the script. Run the following command to make the script executable:
-
-   ```bash
+   
+   cd ligtopgen
+   
    sudo chmod +x install_tools.sh
-
+   
    sudo ./install_tools.sh
 
-The script will:
+The script will install:
 
     Install Miniconda
     Install AmberTools

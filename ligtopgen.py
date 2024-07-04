@@ -26,15 +26,13 @@ def generate_topology():
     output_basename = os.path.splitext(os.path.basename(ligand))[0]
 
     try:
-        # Path to the AmberTools activation script miniconda3/envs/AmberTools23
+         # Path to the Conda and AmberTools activation script
         home_dir = os.path.expanduser("~")
+        conda_activation = os.path.join(home_dir, "miniconda3", "etc", "profile.d", "conda.sh")
         ambertools_activation = os.path.join(home_dir, "miniconda3", "amber.sh")
 
-        # Prepare command to execute acpype
-        acpype_executable = "/usr/local/bin/acpype"
-
-        # Prepare command to activate AmberTools and execute acpype
-        command = f"source {ambertools_activation} && acpype -i {ligand} -o all"
+        # Prepare command to activate Conda environment and execute acpype
+        command = f"source {conda_activation} && conda activate base && source {ambertools_activation} && acpype -i {ligand} -o all"
 
         # Debug statement to print the command
         update_message(f"Running command: {command}\n")

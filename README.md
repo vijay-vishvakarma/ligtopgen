@@ -24,13 +24,7 @@ Before running the setup script, ensure you have the following installed on your
    ```bash
    sudo chmod +x install_tools.sh
 
-    Run the Setup Script
-
-    Execute the script with superuser privileges to install all dependencies:
-
-    bash
-
-sudo ./install_tools.sh
+   sudo ./install_tools.sh
 
 The script will:
 
@@ -40,8 +34,7 @@ The script will:
     Install GROMACS
     Install PyInstaller
 
-After the script completes, restart your terminal or run source ~/.bashrc to apply changes.
-
+After the script completes, restart your terminal.
 Generate Executable
 
 Once the dependencies are installed, you can use PyInstaller to generate an executable for the ligand topology generator script. Run the following commands:
@@ -58,9 +51,7 @@ Usage
 
     Navigate to the directory containing the ligtopgen executable and run it:
 
-    bash
-
-./dist/ligtopgen
+   ./dist/ligtopgen
 
 You can also add an alias to your .bashrc file for easier access:
 

@@ -16,8 +16,9 @@ Before running the setup script, ensure you have the following installed on your
 1. **Download the Script**
 
    Save the setup to your local machine.
+   git clone https://github.com/vijay-vishvakarma/ligtopgen.git
 
-2. **Run the Script Executable**
+3. **Run the Script Executable**
 
    Open your terminal and navigate to the directory where you saved the script. Run the following command to make the script executable:
    The script will install:

@@ -4,6 +4,8 @@ topology generator tool:
 
 This project provides a graphical user interface (GUI) to generate topology files for ligands using ACPYPE and AmberTools. The setup script will install all necessary dependencies and create an executable for the tool.
 
+Topologies files to be generated so far: CNS/XPLOR, GROMACS, CHARMM and AMBER.
+
 ## Prerequisites
 
 Before running the setup script, ensure you have the following installed on your system:

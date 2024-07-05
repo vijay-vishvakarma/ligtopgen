@@ -51,7 +51,7 @@ bash
     
 This will create a standalone executable named ligtopgen in the dist directory.
 
-    mv ./dist/ligtopgen /usr/local/bin/ligtopgen
+    sudo mv ./dist/ligtopgen /usr/local/bin/ligtopgen
     chmod +x /usr/local/bin/ligtopgen
     
 Usage

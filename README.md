@@ -23,7 +23,7 @@ Before running the setup script, ensure you have the following installed on your
 
 2. **Run the Script Executable**
 
-   Open your terminal and navigate to the directory where you saved the script. Run the following command to make the script executable:
+      Open your terminal and navigate to the directory where you saved the script. Run the following command to make    the script executable:
    The script will install:
 
 
@@ -33,7 +33,7 @@ Before running the setup script, ensure you have the following installed on your
       
       ./install_tools.sh
 
-The script will install:
+   The script will install:
 
     Install Miniconda
     Install AmberTools
@@ -41,17 +41,17 @@ The script will install:
     Install GROMACS
     Install PyInstaller
 
-After the script completes, restart your terminal.
-Generate Executable
+   After the script completes, restart your terminal.
+   Generate Executable
 
-Once the dependencies are installed, you can use PyInstaller to generate an executable for the ligand topology generator script. Run the following commands:
+      Once the dependencies are installed, you can use PyInstaller to generate an executable for the ligand topology    generator script. Run the following commands:
 
-bash
+   bash
 
     pyinstaller topology_generator.spec
 
     
-This will create a standalone executable named ligtopgen in the dist directory.
+   This will create a standalone executable named ligtopgen in the dist directory.
 
     sudo mv ./dist/ligtopgen /usr/local/bin/ligtopgen
     chmod +x /usr/local/bin/ligtopgen
@@ -62,16 +62,16 @@ This will create a standalone executable named ligtopgen in the dist directory.
     
     ligtopgen
     
-You can also add an alias to your .bashrc file for easier access:
+   You can also add an alias to your .bashrc file for easier access:
 
-bash
+   bash
 
-echo "export ligtopgen=~/dist/ligtopgen" >> ~/.bashrc
-source ~/.bashrc
+   echo "export ligtopgen=~/dist/ligtopgen" >> ~/.bashrc
+   source ~/.bashrc
 
-Then you can run the executable using:
+   Then you can run the executable using:
 
-bash
+   bash
 
     ligtopgen
 
@@ -90,7 +90,7 @@ bash
 
 5. **License**
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+   This project is licensed under the MIT License. See the LICENSE file for details.
 
 6. **Acknowledgements**
 

@@ -21,7 +21,7 @@ Before running the setup script, ensure you have the following installed on your
    
    git clone https://github.com/vijay-vishvakarma/ligtopgen.git
 
-3. **Run the Script Executable**
+2. **Run the Script Executable**
 
    Open your terminal and navigate to the directory where you saved the script. Run the following command to make the script executable:
    The script will install:
@@ -56,7 +56,7 @@ This will create a standalone executable named ligtopgen in the dist directory.
     sudo mv ./dist/ligtopgen /usr/local/bin/ligtopgen
     chmod +x /usr/local/bin/ligtopgen
     
-Usage
+3. **Usage**
 
     Launch the Ligand Topology Generator, just type on terminal
     
@@ -82,16 +82,17 @@ bash
         Click on the "Generate Topology" button to start the topology generation process.
         The output and any messages will be displayed in the message area.
 
-Troubleshooting
+4. **Troubleshooting**
 
     Ensure that you have selected a valid ligand file in .mol2 format.
     Check that all dependencies are correctly installed by re-running the setup script if necessary.
     If the topology generation fails, check the message area for error details.
 
-License
+5. **License**
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-Acknowledgements
+
+6. **Acknowledgements**
 
     ACPYPE
     AmberTools

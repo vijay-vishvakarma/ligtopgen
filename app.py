@@ -47,14 +47,15 @@ if uploaded_file is not None:
                     "-c", "bcc"           # Charge method: bcc = AM1-BCC
                 ]
 
-                result = subprocess.run(cmd, capture_output=True, text=True, cwd=output_dir)
-
-                if result.returncode != 0:
-                    st.error("ACPYPE failed!")
-                    st.code(result.stderr)
+                result = subprocess.run(cmd, capture_output=True, text=True, cwd=output_dir, timeout=300)  # Add timeout
+                
+                if result.returncode != 0 or "FAILED" in result.stdout or "ERROR" in result.stdout:
+                    st.error("ACPYPE failed! See details below:")
+                    st.code(result.stdout + "\n" + result.stderr)
                 else:
-                    st.success("Topology files generated successfully!")
+                    st.success("Success!")
                     st.code(result.stdout)
+                    # ... rest for downloads
 
                     # List and offer downloads
                     generated_files = []
